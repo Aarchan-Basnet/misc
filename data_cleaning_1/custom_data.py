@@ -17,7 +17,6 @@ def custom_data(custom_list, file):
         df_custom_data.append(filtered_df)
 
     df_custom_data = pd.concat(df_custom_data)
-    # print(df_custom_data)
     print("Custom data successfully extracted.")
     df_custom_data.to_csv('my_custom_data.csv', index=False)
     return df_custom_data
@@ -28,22 +27,12 @@ def extract_json(df):
     df_groups = df.groupby("SystemId")
     custom_data = []
     for key, sub_df in df_groups:
-        # print(f"SystemId = {key}")
-        # print(sub_df)
         df_subgroups = sub_df.groupby("INDEX")
         try:
             for index, req_df in df_subgroups:
-                # print(f"index = {index}")
                 pd.set_option("display.max_columns", None)
-                # print(req_df)
 
                 req_df.set_index('FIELD', inplace=True)
-                # print(req_df)
-                # req_df.to_csv('test.csv', index=True)
-
-                # paa_qt = req_df.loc['PeopleAlsoAsk_QuestionText']
-                # print(type(paa_qt))
-                # print(paa_qt['VALUE'])
                 data = {
                     "SystemId": key,
                     "Index": index
@@ -52,12 +41,10 @@ def extract_json(df):
                     value = req_df.loc[text]['VALUE']
                     data[text] = value
 
-                # print(data)
                 custom_data.append(data)
         except:
             pass
 
-    # print(custom_data)
     with open('custom_data.json', "w", encoding='utf-8') as file:
         json.dump(custom_data, file)
 
