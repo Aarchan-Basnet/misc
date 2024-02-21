@@ -1,0 +1,3048 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages" content="en, es, fr, ja, pt_BR, uk, el, de, zh_Hans, zh_Hant, ru, he, eo">
+
+
+    <title>biliup · PyPI</title>
+    <meta name="description" content="stream download and upload">
+
+    <link rel="stylesheet" href="/static/css/warehouse-ltr.99b3104d.css">
+    <link rel="stylesheet" href="/static/css/fontawesome.b50b476c.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:400,400italic,600,600italic,700,700italic%7CSource+Code+Pro:500">
+    <noscript>
+      <link rel="stylesheet" href="/static/css/noscript.0673c9ea.css">
+    </noscript>
+
+
+    <link rel="icon" href="/static/images/favicon.35549fe8.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 latest updates" href="/rss/updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 newest packages" href="/rss/packages.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS: latest releases for biliup" href="/rss/project/biliup/releases.xml">    <link rel="canonical" href="https://pypi.org/project/biliup/">
+
+    <meta property="og:url" content="https://pypi.org/project/biliup/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pypi.org/static/images/twitter.abaf4b19.webp">
+    <meta property="og:title" content="biliup">
+    <meta property="og:description" content="stream download and upload">
+
+    <link rel="search" type="application/opensearchdescription+xml" title="PyPI" href="/opensearch.xml">
+
+    <script async
+data-ga-id="UA-55961911-1"
+data-ga4-id="G-RW7D75DF8V"
+            src="/static/js/warehouse.dd4295c4.js">
+    </script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+};
+</script>
+<script async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"
+  integrity="sha256-1CldwzdEg2k1wTmf7s5RWVd7NMXI/7nxxjJM2C4DqII="
+  crossorigin="anonymous"
+></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55961911-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RW7D75DF8V"></script>
+<script defer src="https://www.fastly-insights.com/insights.js?k=6a52360a-f306-421e-8ed5-7417d0d4a4e9&dnt=true"></script>
+    <script async
+        src="https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js"
+        integrity="sha256-U3hKDidudIaxBDEzwGJApJgPEf2mWk6cfMWghrAa6i0= sha384-UcmsCqcNRSLW/dV3Lo1oCi2/VaurXbib6p4HyUEOeIa/4OpsrnucrugAefzVZJfI sha512-q4t1L4xEjGV2R4hzqCa41P8jrgFUS8xTb8rdNv4FGvw7FpydVj/kkxBJHOiaoxHa8olCcx1Slk9K+3sNbsM4ug=="
+        crossorigin="anonymous"
+    ></script>
+
+  </head>
+
+  <body data-controller="viewport-toggle">
+
+    <!-- Accessibility: this link should always be the first piece of content inside the body-->
+    <a href="#content" class="skip-to-content">Skip to main content</a>
+
+    <button type="button" class="button button--primary button--switch-to-mobile hidden" data-viewport-toggle-target="switchToMobile" data-action="viewport-toggle#switchToMobile">
+Switch to mobile version    </button>
+
+    <div id="sticky-notifications" class="stick-to-top js-stick-to-top">
+      <!-- Add browser warning. Will show for ie9 and below -->
+      <!--[if IE]>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+      </div>
+      <![endif]-->
+      <noscript>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+      </div>
+      </noscript>
+
+<div data-html-include="/_includes/notification-banners/"></div>    </div>
+
+<div data-html-include="/_includes/flash-messages/"></div>
+
+<div data-html-include="/_includes/session-notifications/"></div>
+    <header class="site-header ">
+      <div class="site-container">
+        <div class="split-layout">
+          <div class="split-layout">
+            <div>
+              <a class="site-header__logo" href="/">
+                <img alt="PyPI" src="/static/images/logo-small.2a411bc6.svg">
+              </a>
+            </div>
+
+            <form class="search-form search-form--primary" action="/search/" role="search">
+              <label for="search" class="sr-only">Search PyPI</label>
+              <input id="search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false" data-controller="search-focus" data-action="keydown@window->search-focus#focusSearchField" data-search-focus-target="searchField">
+              <button type="submit" class="search-form__button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <span class="sr-only">Search</span>
+              </button>
+            </form>
+          </div>
+
+<div data-html-include="/_includes/current-user-indicator/">            <div id="user-indicator" class="horizontal-menu horizontal-menu--light horizontal-menu--tall">
+  <nav class="horizontal-menu horizontal-menu--light horizontal-menu--tall hide-on-tablet" aria-label="Main navigation">
+    <ul>
+      <li class="horizontal-menu__item"><a href="/help/" class="horizontal-menu__link">Help</a></li>
+      <li class="horizontal-menu__item"><a href="/sponsors/" class="horizontal-menu__link">Sponsors</a></li>
+      <li class="horizontal-menu__item"><a href="/account/login/" class="horizontal-menu__link">Log in</a></li>
+      <li class="horizontal-menu__item"><a href="/account/register/" class="horizontal-menu__link">Register</a></li>
+    </ul>
+  </nav>
+  <nav class="dropdown dropdown--on-menu hidden show-on-tablet" aria-label="Main navigation">
+    <button type="button" class="horizontal-menu__link dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-label="View menu">
+Menu      <span class="dropdown__trigger-caret">
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </span>
+    </button>
+    <ul class="dropdown__content" aria-hidden="true" aria-label="Main menu">
+      <li><a class="dropdown__link" href="/help/">Help</a></li>
+      <li><a class="dropdown__link" href="/sponsors/">Sponsors</a></li>
+      <li><a class="dropdown__link" href="/account/login/">Log in</a></li>
+      <li><a class="dropdown__link" href="/account/register/">Register</a></li>
+    </ul>
+  </nav>
+</div>
+</div>        </div>
+      </div>
+    </header>
+
+    <div class="mobile-search">
+      <form class="search-form search-form--fullwidth" action="/search/" role="search">
+        <label for="mobile-search" class="sr-only">Search PyPI</label>
+        <input id="mobile-search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false">
+        
+        <button type="submit" class="search-form__button">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span class="sr-only">Search</span>
+        </button>
+      </form>
+    </div>
+
+    <main id="content">
+<div class="hidden"
+  data-controller="github-repo-stats"
+  data-github-repo-stats-github-repo-info-outlet=".github-repo-info"
+  data-github-repo-stats-url-value="https://api.github.com/repos/ForgQi/bilibiliupload"
+  data-github-repo-stats-issue-url-value="https://api.github.com/search/issues?q=repo:ForgQi/bilibiliupload+type:issue+state:open&amp;per_page=1">
+</div>
+
+<div class="banner">
+  <div class="package-header">
+    <div class="package-header__left">
+      <h1 class="package-header__name">
+        biliup 0.4.35
+      </h1>
+
+      <div data-controller="clipboard">
+        <p class="package-header__pip-instructions">
+          <span id="pip-command" data-clipboard-target="source">pip install biliup</span>
+          <button type="button" class="copy-tooltip copy-tooltip-s" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+            <i class="fa fa-copy" aria-hidden="true"></i>
+            <span class="sr-only">Copy PIP instructions</span>
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <div class="package-header__right">
+      <a class="status-badge status-badge--good" href="/project/biliup/">
+        <span>Latest version</span>
+      </a>
+      <p class="package-header__date">
+Released: <time datetime="2024-02-21T08:26:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 21, 2024
+</time>      </p>
+    </div>
+  </div>
+</div>
+
+<div class="horizontal-section horizontal-section--grey horizontal-section--thin">
+  <div class="site-container">
+<div data-html-include="/_includes/administer-project-include/biliup"></div>    <div class="split-layout split-layout--middle package-description">
+      <p class="package-description__summary">stream download and upload</p>
+<div data-html-include="/_includes/edit-project-button/biliup"></div>    </div>
+  </div>
+</div>
+
+<div data-controller="project-tabs">
+  <div class="tabs-container">
+    <div class="vertical-tabs">
+      <div class="vertical-tabs__tabs">
+        <div class="sidebar-section">
+          <h3 class="sidebar-section__title">Navigation</h3>
+          <nav aria-label="Navigation for biliup">
+            <ul class="vertical-tabs__list" role="tablist">
+              <li role="tab">
+                <a id="description-tab" href="#description" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                  <i class="fa fa-align-left" aria-hidden="true"></i>
+Project description                </a>
+              </li>
+              <li role="tab">
+                <a id="history-tab" href="#history" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Release history. Focus will be moved to the history panel.">
+                  <i class="fa fa-history" aria-hidden="true"></i>
+Release history                </a>
+              </li>
+              <li role="tab">
+                <a id="files-tab" href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Download files. Focus will be moved to the project files.">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+Download files                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  <ul class="vertical-tabs__list">
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/ForgQi/bilibiliupload" rel="nofollow">
+        
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  <div class="hidden github-repo-info" data-controller="github-repo-info">
+GitHub statistics:    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="stargazersUrl" rel="noopener">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <strong>Stars:</strong>
+          <span data-github-repo-info-target="stargazersCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="forksUrl" rel="noopener">
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+          <strong>Forks:</strong>
+          <span data-github-repo-info-target="forksCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="openIssuesUrl" rel="noopener">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <strong>Open issues:</strong>
+          <span data-github-repo-info-target="openIssuesCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="openPRsUrl" rel="noopener">
+          <i class="fa fa-code-pull-request" aria-hidden="true"></i>
+          <strong>Open PRs:</strong>
+          <span data-github-repo-info-target="openPRsCount"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <p>
+View statistics for this project via <a href="https://libraries.io/pypi/biliup" title="External link" target="_blank" rel="noopener">Libraries.io</a>, or by using <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/" target="_blank" rel="noopener">our public dataset on Google BigQuery</a>  </p>
+</div>
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+    <p><strong>Author:</strong> ForgQi</p>
+  <p class="tags">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+    <span class="sr-only">Tags</span>
+    <span class="package-keyword">
+      bilibili,    </span>
+    <span class="package-keyword">
+      douyu,    </span>
+    <span class="package-keyword">
+      huya    </span>
+  </p>
+  <p>
+    <strong>Requires:</strong> Python &gt;=3.7
+  </p>
+</div>
+
+<div class="sidebar-section">
+    <h3 class="sidebar-section__title">Maintainers</h3>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/ForgQi/" aria-label="ForgQi">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/ab4c96513f3b5fb3ef32ee4ea6b2e389fef8d82c/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f33396435346132663363636236313231653336396233333562646230333432313f73697a653d3530" height="50" width="50" alt="Avatar for ForgQi from gravatar.com" title="Avatar for ForgQi from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">
+            ForgQi
+          </span>
+        </a>
+      </span>
+</div>
+
+<div class="sidebar-section" data-ea-publisher="psf" data-ea-type="psf" data-ea-keywords="pypi-sidebar"></div>
+
+      </div>
+      <div class="vertical-tabs__panel">
+        <!-- mobile menu -->
+        <nav aria-label="Navigation for biliup">
+          <ul class="vertical-tabs__list" role="tablist">
+            <li role="tab">
+              <a id="mobile-description-tab" href="#description" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile vertical-tabs__tab--no-top-border vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+Project description              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-data-tab" href="#data" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Project details. Focus will be moved to the project details.">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+Project details              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-history-tab" href="#history" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Release history. Focus will be moved to the history panel.">
+              <i class="fa fa-history" aria-hidden="true"></i>
+Release history            </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-files-tab" href="#files" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Download files. Focus will be moved to the project files.">
+                <i class="fa fa-download" aria-hidden="true"></i>
+Download files              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="description" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="description-tab mobile-description-tab" tabindex="-1">
+          <h2 class="page-title">Project description</h2>
+          <div class="project-description">
+            <div align=center>
+<h1>biliup</h1>
+<p><a href="http://www.python.org/download" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/58a2db7e3b7b983a6c3770443818797fea70d66d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d332e372532422d626c7565" alt=python></a>
+<a href="https://pypi.org/project/biliup" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/303baf2ad802eb324975d0216c4b5b99b406feb3/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f62696c697570" alt=PyPI></a>
+<a href="https://pypi.org/project/biliup" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/ceacc73d19dd5e4dbe9663d583fa341a7da8ad08/68747470733a2f2f696d672e736869656c64732e696f2f707970692f646d2f62696c697570" alt="PyPI - Downloads"></a>
+<a href="https://github.com/biliup/biliup/blob/master/LICENSE" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/7b215265ea9cf5b2d9cab3765b45149250e580f0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f62696c6975702f62696c697570" alt=license></a>
+<a href="https://t.me/+IkpIABHqy6U0ZTQ5" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/34476c7806ec09a542ef74f324ca5f67a3398eeb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f54656c656772616d2d47726f75702d626c75652e7376673f6c6f676f3d74656c656772616d" alt=Telegram></a>
+<a href="https://discord.gg/shZmdxDFB7" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/2abaf8d93c4dd1eef9138fe95c2b9ff4ab676cc6/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f313031353439343039383438313835323434372e7376673f6c6f676f3d646973636f7264" alt="Discord chat"></a></p>
+<p><a href="https://github.com/biliup/biliup/stargazers" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/acd932601ad70c7e7bade9bf13a39a8e0b4842a5/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f62696c6975702f62696c6975703f7374796c653d736f6369616c" alt=STARS></a>
+<a href="https://github.com/biliup/biliup/network" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/a4626a89a8361dc8e16f282b9414d6571136877f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f726b732f62696c6975702f62696c6975703f7374796c653d736f6369616c" alt=Forks></a>
+<a href="https://github.com/biliup/biliup/releases/latest" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/1a68b489a734bbecc61325df5912bb20d5d64b01/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f62696c6975702f62696c6975702f746f74616c3f7374796c653d736f6369616c" alt=Downloads></a>
+<a href="https://github.com/biliup/biliup/watchers" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/c5a5a2895d6377a7bcb6764abe12516c5c858d5d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f77617463686572732f62696c6975702f62696c6975702e7376673f7374796c653d736f6369616c" alt=Watchers></a></p>
+</div>
+<ul>
+<li>支持自动录制各大主流直播平台实时直播流，包括但不限于AcFun，afreecaTV，哔哩哔哩，斗鱼，抖音，虎牙，网易CC，NICO，猫耳FM，
+Twitch，YY直播等，并于录制结束后自动上传到哔哩哔哩视频网站。</li>
+<li>支持YouTube，twitch直播回放列表自动搬运至b站，如链接 <a href="https://www.twitch.tv/xxxx/videos?filter=archives&amp;sort=time" rel=nofollow>https://www.twitch.tv/xxxx/videos?filter=archives&amp;sort=time</a></li>
+<li>支持录制哔哩哔哩，斗鱼，虎牙，Twitch平台的<strong>直播弹幕</strong>，生成B站标准格式的XML弹幕文件，可被常见的各种弹幕挂载程序使用处理</li>
+<li>自动选择上传线路，保证国内外vps上传质量和速度</li>
+<li>可分别控制下载与上传并发量</li>
+<li><del>支持 cos-internal，腾讯云上海内网上传，免流 + 大幅提速</del></li>
+<li>实验性功能：
+<ul>
+<li>防止录制花屏（使用默认的stream-gears下载器就会有这个功能）</li>
+<li>启动时访问 localhost:19159 可使用webUI，从 v0.4.32 版本开始，不依赖配置文件可直接使用webUI，若想和低于 v0.4.32 时一致使用配置文件，请在启动前删除 data 目录, 如<code>rm -r data/ &amp;&amp; biliup restart</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>更新日志</strong>：<a href="https://github.com/biliup/biliup/blob/master/CHANGELOG.md" rel=nofollow>CHANGELOG.md</a></p>
+<p><strong>文档地址</strong>：<a href="https://biliup.github.io/biliup" rel=nofollow>https://biliup.github.io/biliup</a></p>
+<h2>详细安装教程:</h2>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1jB4y1p7TK/" rel=nofollow>快速上手视频教程</a> by <a href="https://github.com/by123456by" rel=nofollow>@milk</a></li>
+<li><a href="https://blog.waitsaber.org/archives/129" rel=nofollow>Ubuntu</a> 、<a href="https://blog.waitsaber.org/archives/163" rel=nofollow>CentOS</a>
+、<a href="https://blog.waitsaber.org/archives/169" rel=nofollow>Windows</a> 教程 by <a href="https://github.com/waitsaber" rel=nofollow>@waitsaber</a></li>
+<li><a href="https://blog.waitsaber.org/archives/167" rel=nofollow>常见问题解决方案</a> by <a href="https://github.com/waitsaber" rel=nofollow>@waitsaber</a></li>
+</ul>
+<h2>INSTALLATION</h2>
+<ol start=0>
+<li>安装 <strong>Python 3.7+</strong> 和 <strong>pip</strong></li>
+</ol>
+<blockquote>
+<p>如需录制 斗鱼(Douyu) 平台，请额外安装至少一个 <strong>JavaScript 解释器</strong>。
+支持且不限于以下的  <strong>JavaScript 解释器</strong>，点击名字可跳转至下载页。
+Please install at least one of the following Javascript interpreter.
+python packages: <a href="https://pypi.org/project/quickjs/" rel=nofollow>QuickJS</a>
+applications: <a href="https://nodejs.org/zh-cn/download" rel=nofollow>Node.js</a></p>
+</blockquote>
+<ol>
+<li>创建配置文件 <strong><a href="https://github.com/biliup/biliup/tree/master/public/config.toml" rel=nofollow>config.toml</a></strong>
+<pre lang=toml><span class=c1># 以下为必填项</span>
+<span class=k>[streamers.</span><span class=s2>"1xx直播录像"</span><span class=k>]</span><span class=w> </span><span class=c1># 替换 1xx直播录像 为 主播名</span>
+<span class=n>url</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=p>[</span><span class=s2>"https://www.twitch.tv/1xx"</span><span class=p>]</span>
+<span class=n>tags</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=p>[</span><span class=s2>"biliup"</span><span class=p>]</span>
+
+<span class=c1># 设置直播间2</span>
+<span class=k>[streamers.</span><span class=s2>"2xx直播录像"</span><span class=k>]</span><span class=w> </span><span class=c1># 注意不能与其他 主播名 重复</span>
+<span class=n>url</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=p>[</span><span class=s2>"https://www.twitch.tv/2xx"</span><span class=p>]</span>
+<span class=n>tags</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=p>[</span><span class=s2>"biliup"</span><span class=p>]</span>
+</pre>
+</li>
+<li>通过 pip 安装 <strong>biliup</strong>：
+<code>pip3 install biliup</code></li>
+<li>开始使用 <strong>biliup</strong>：</li>
+</ol>
+<pre lang=shell><span class=c1># 默认监听 0.0.0.0:19159。可使用-H及-P选项配置。</span>
+<span class=c1># 考虑到安全性，建议指定本地地址配合web server或者添加验证。</span>
+$<span class=w> </span>biliup<span class=w> </span>start
+<span class=c1># 退出</span>
+$<span class=w> </span>biliup<span class=w> </span>stop
+<span class=c1># 重启</span>
+$<span class=w> </span>biliup<span class=w> </span>restart
+<span class=c1># 查看版本</span>
+$<span class=w> </span>biliup<span class=w> </span>--version
+<span class=c1># 显示帮助以查看更多选项</span>
+$<span class=w> </span>biliup<span class=w> </span>-h
+<span class=c1># 指定配置文件路径</span>
+$<span class=w> </span>biliup<span class=w> </span>--config<span class=w> </span>./config.yaml<span class=w> </span>start
+</pre>
+<p>从 v0.2.15 版本开始，配置文件支持 toml 格式，详见 <a href="https://github.com/biliup/biliup/tree/master/public/config.toml" rel=nofollow>config.toml</a> ，
+yaml配置文件完整内容可参照 <a href="https://github.com/biliup/biliup/tree/master/public/config.yaml" rel=nofollow>config.yaml</a> 。
+<strong>FFmpeg</strong> 作为可选依赖。如果还有问题可以 <a href="https://github.com/ForgQi/biliup/discussions/58#discussioncomment-2388776" rel=nofollow>加群讨论</a> 。</p>
+<blockquote>
+<p>使用上传功能需要登录B站，通过 <a href="https://github.com/ForgQi/biliup-rs" rel=nofollow>命令行投稿工具</a> 获取 cookies.json，并放入启动 biliup 的路径即可</p>
+</blockquote>
+<blockquote>
+<p>ARM平台用户，需要使用到stream-gears（默认下载器与上传器）进行下载和上传的，请参考此教程降级stream-gears版本。 <a href="https://github.com/biliup/biliup/discussions/407" rel=nofollow>https://github.com/biliup/biliup/discussions/407</a></p>
+</blockquote>
+<blockquote>
+<p>Linux下以daemon进程启动，录像和日志文件保存在执行目录下，程序执行过程可查看日志文件。启动之后使用命令<code>ps -A | grep biliup</code> 查看进程biliup是否启动成功。</p>
+</blockquote>
+<h2>Docker使用 🔨</h2>
+<h3>方式一 拉取镜像</h3>
+<blockquote>
+<p>请注意替换 /host/path 为宿主机下载目录</p>
+</blockquote>
+<ul>
+<li>从自定义的配置文件启动</li>
+</ul>
+<pre lang=bash><span class=c1># 在下载目录创建配置文件</span>
+vim<span class=w> </span>/host/path/config.toml
+<span class=c1># 启动biliup的docker容器</span>
+docker<span class=w> </span>run<span class=w> </span>-P<span class=w> </span>--name<span class=w> </span>biliup<span class=w> </span>-v<span class=w> </span>/host/path:/opt<span class=w> </span>-d<span class=w> </span>ghcr.io/biliup/caution:master
+</pre>
+<ul>
+<li>从自定义的配置文件启动</li>
+</ul>
+<pre lang=bash><span class=c1># 在下载目录创建配置文件</span>
+vim<span class=w> </span>/host/path/config.toml
+<span class=c1># 启动biliup的docker容器，并启用用户验证。请注意替换 yourpassword 为你的密码。</span>
+docker<span class=w> </span>run<span class=w> </span>-P<span class=w> </span>--name<span class=w> </span>biliup<span class=w> </span>-v<span class=w> </span>/host/path:/opt<span class=w> </span>-p<span class=w> </span><span class=m>19159</span>:19159<span class=w> </span>-d<span class=w> </span>--restart<span class=w> </span>always<span class=w> </span>ghcr.io/biliup/caution:latest<span class=w> </span>--password<span class=w> </span>yourpassword
+</pre>
+<blockquote>
+<p>Web-UI 默认用户名为 biliup。</p>
+</blockquote>
+<ul>
+<li>从默认配置文件启动</li>
+</ul>
+<pre lang=bash>docker<span class=w> </span>run<span class=w> </span>-P<span class=w> </span>--name<span class=w> </span>biliup<span class=w> </span>-v<span class=w> </span>/host/path:/opt<span class=w> </span>-p<span class=w> </span><span class=m>19159</span>:19159<span class=w> </span>-d<span class=w> </span>--restart<span class=w> </span>always<span class=w> </span>ghcr.io/biliup/caution:latest<span class=w> </span>--password<span class=w> </span>yourpassword
+</pre>
+<h3>方式二 手动构建镜像</h3>
+<pre lang=bash><span class=c1># 进入biliup目录</span>
+<span class=nb>cd</span><span class=w> </span>biliup
+<span class=c1># 构建镜像</span>
+sudo<span class=w> </span>docker<span class=w> </span>build<span class=w> </span>.<span class=w> </span>-t<span class=w> </span>biliup
+<span class=c1># 启动镜像</span>
+sudo<span class=w> </span>docker<span class=w> </span>run<span class=w> </span>-P<span class=w> </span>-d<span class=w> </span>biliup
+</pre>
+<h3>进入容器 📦</h3>
+<ol>
+<li>查看容器列表，找到你要进入的容器的imageId</li>
+</ol>
+<pre lang=bash>sudo<span class=w> </span>docker<span class=w> </span>ps
+</pre>
+<ol start=2>
+<li>进入容器</li>
+</ol>
+<pre lang=bash>sudo<span class=w> </span>docker<span class=w> </span><span class=nb>exec</span><span class=w> </span>-it<span class=w> </span>imageId<span class=w> </span>/bin/bash
+</pre>
+<h2>从源码运行biliup</h2>
+<ul>
+<li>下载源码: <code>git clone https://github.com/ForgQi/bilibiliupload.git</code></li>
+<li>安装: <code>pip3 install -e .</code></li>
+<li>启动: <code>python3 -m biliup</code></li>
+<li>构建:
+<pre lang=shell>$<span class=w> </span>npm<span class=w> </span>install
+$<span class=w> </span>npm<span class=w> </span>run<span class=w> </span>build
+$<span class=w> </span>python3<span class=w> </span>-m<span class=w> </span>build
+</pre>
+</li>
+<li>调试 webUI: <code>python3 -m biliup --static-dir public</code></li>
+</ul>
+<h2>yaml配置文件示例</h2>
+<p>可选项见<a href="https://github.com/biliup/biliup/tree/master/public/config.yaml" rel=nofollow>完整配置文件</a>,
+tid投稿分区见<a href="https://github.com/ForgQi/biliup/wiki" rel=nofollow>Wiki</a></p>
+<pre lang=yaml><span class=nt>streamers</span><span class=p>:</span>
+<span class=w>    </span><span class=nt>xxx直播录像</span><span class=p>:</span>
+<span class=w>        </span><span class=nt>url</span><span class=p>:</span>
+<span class=w>            </span><span class="p p-Indicator">-</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">https://www.twitch.tv/xxx</span>
+<span class=w>        </span><span class=nt>tags</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">biliup</span>
+</pre>
+<h2>EMBEDDING BILIUP</h2>
+<p>如果你不想使用完全自动托管的功能，而仅仅只是想嵌入biliup作为一个库来使用这里有两个例子可以作为参考</p>
+<h3>上传</h3>
+<pre lang=python3><span class=kn>from</span> <span class=nn>biliup.plugins.bili_webup</span> <span class=kn>import</span> <span class=n>BiliBili</span><span class=p>,</span> <span class=n>Data</span>
+
+<span class=n>video</span> <span class=o>=</span> <span class=n>Data</span><span class=p>()</span>
+<span class=n>video</span><span class=o>.</span><span class=n>title</span> <span class=o>=</span> <span class=s1>'视频标题'</span>
+<span class=n>video</span><span class=o>.</span><span class=n>desc</span> <span class=o>=</span> <span class=s1>'视频简介'</span>
+<span class=n>video</span><span class=o>.</span><span class=n>source</span> <span class=o>=</span> <span class=s1>'添加转载地址说明'</span>
+<span class=c1># 设置视频分区,默认为122 野生技能协会</span>
+<span class=n>video</span><span class=o>.</span><span class=n>tid</span> <span class=o>=</span> <span class=mi>171</span>
+<span class=n>video</span><span class=o>.</span><span class=n>set_tag</span><span class=p>([</span><span class=s1>'星际争霸2'</span><span class=p>,</span> <span class=s1>'电子竞技'</span><span class=p>])</span>
+<span class=n>video</span><span class=o>.</span><span class=n>dynamic</span> <span class=o>=</span> <span class=s1>'动态内容'</span>
+<span class=n>lines</span> <span class=o>=</span> <span class=s1>'AUTO'</span>
+<span class=n>tasks</span> <span class=o>=</span> <span class=mi>3</span>
+<span class=n>dtime</span> <span class=o>=</span> <span class=mi>7200</span> <span class=c1># 延后时间，单位秒</span>
+<span class=k>with</span> <span class=n>BiliBili</span><span class=p>(</span><span class=n>video</span><span class=p>)</span> <span class=k>as</span> <span class=n>bili</span><span class=p>:</span>
+    <span class=n>bili</span><span class=o>.</span><span class=n>login</span><span class=p>(</span><span class=s2>"bili.cookie"</span><span class=p>,</span> <span class=p>{</span>
+        <span class=s1>'cookies'</span><span class=p>:{</span>
+            <span class=s1>'SESSDATA'</span><span class=p>:</span> <span class=s1>'your SESSDATA'</span><span class=p>,</span>
+            <span class=s1>'bili_jct'</span><span class=p>:</span> <span class=s1>'your bili_jct'</span><span class=p>,</span>
+            <span class=s1>'DedeUserID__ckMd5'</span><span class=p>:</span> <span class=s1>'your ckMd5'</span><span class=p>,</span>
+            <span class=s1>'DedeUserID'</span><span class=p>:</span> <span class=s1>'your DedeUserID'</span>
+        <span class=p>},</span><span class=s1>'access_token'</span><span class=p>:</span> <span class=s1>'your access_key'</span><span class=p>})</span>
+    <span class=c1># bili.login_by_password("username", "password")</span>
+    <span class=k>for</span> <span class=n>file</span> <span class=ow>in</span> <span class=n>file_list</span><span class=p>:</span>
+        <span class=n>video_part</span> <span class=o>=</span> <span class=n>bili</span><span class=o>.</span><span class=n>upload_file</span><span class=p>(</span><span class=n>file</span><span class=p>,</span> <span class=n>lines</span><span class=o>=</span><span class=n>lines</span><span class=p>,</span> <span class=n>tasks</span><span class=o>=</span><span class=n>tasks</span><span class=p>)</span>  <span class=c1># 上传视频，默认线路AUTO自动选择，线程数量3。</span>
+        <span class=n>video</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>video_part</span><span class=p>)</span>  <span class=c1># 添加已经上传的视频</span>
+    <span class=n>video</span><span class=o>.</span><span class=n>delay_time</span><span class=p>(</span><span class=n>dtime</span><span class=p>)</span> <span class=c1># 设置延后发布（2小时~15天）</span>
+    <span class=n>video</span><span class=o>.</span><span class=n>cover</span> <span class=o>=</span> <span class=n>bili</span><span class=o>.</span><span class=n>cover_up</span><span class=p>(</span><span class=s1>'/cover_path'</span><span class=p>)</span><span class=o>.</span><span class=n>replace</span><span class=p>(</span><span class=s1>'http:'</span><span class=p>,</span> <span class=s1>''</span><span class=p>)</span>
+    <span class=n>ret</span> <span class=o>=</span> <span class=n>bili</span><span class=o>.</span><span class=n>submit</span><span class=p>()</span>  <span class=c1># 提交视频</span>
+</pre>
+<h3>下载</h3>
+<pre lang=python3><span class=kn>from</span> <span class=nn>biliup.downloader</span> <span class=kn>import</span> <span class=n>download</span>
+
+<span class=n>download</span><span class=p>(</span><span class=s1>'文件名'</span><span class=p>,</span> <span class=s1>'https://www.panda.tv/1150595'</span><span class=p>,</span> <span class=n>suffix</span><span class=o>=</span><span class=s1>'flv'</span><span class=p>)</span>
+</pre>
+<h2>使用建议</h2>
+<h3>1. VPS上传线路选择</h3>
+<p>国内VPS网络费用较高，建议使用国外VPS，根据机器的硬盘等资源设置合理并发量, 选择kodo线路较容易跑满带宽。</p>
+<p>b站上传目前有两种模式，分别为bup和bupfetch模式。</p>
+<blockquote>
+<p>bup：国内常用模式，视频直接上传到b站投稿系统。</p>
+<p>bupfetch：目前见于国外网络环境，视频首先上传至第三方文件系统，上传结束后通知bilibili投稿系统，再由b站投稿系统从第三方系统拉取视频，以保证某些地区用户的上传体验。</p>
+</blockquote>
+<p>bup模式支持的上传方式为upos，其线路有：</p>
+<ul>
+<li>ws（网宿）</li>
+<li>qn（七牛）</li>
+<li>bda2（百度）</li>
+</ul>
+<p>bupfetch模式支持的上传方式及线路有：</p>
+<ul>
+<li><del>kodo（七牛）已失效</del></li>
+<li><del>gcs (谷歌）已失效</del></li>
+<li><del>bos (百度）已失效</del></li>
+</ul>
+<p>国内基本选择upos模式的bda2线路。国外多为upos模式的ws和qn线路，也有bupfetch模式的kodo、gcs线路。bilibili采用客户端和服务器端线路探测相结合的方式，服务器会返回可选线路，客户端上传前会先发包测试选择一条延迟最低的线路，保证各个地区的上传质量。</p>
+<h3>2. 登录方案</h3>
+<p>登录有两种方案：</p>
+<ul>
+<li>操作浏览器模拟登录</li>
+<li>通过b站的OAuth2接口</li>
+</ul>
+<blockquote>
+<p>对于滑动验证码可进行二值化、灰度处理找缺口计算移动像素，系统会上传分析你的拖动行为，模拟人操作轨迹，提供加速度、抖动等，如直接拖动到目标位置不能通过验证，提示：“拼图被怪物吃了”。滑动验证码系统会学习，需不断更新轨迹策略保证通过验证的成功率。<br>
+OAuth2接口要提供key，需逆向分析各端</p>
+</blockquote>
+<h3>3. 推荐biliup配置</h3>
+<p>线程池限制并发数，减少磁盘占满的可能性。</p>
+<blockquote>
+<p>检测到下载情况卡死或者下载超时，biliup会重试三次保证可用性。代码更新后将在空闲时自动重启。</p>
+</blockquote>
+<h3>4. 关于录制的XML弹幕文件如何使用</h3>
+<p>使用方法有很多种：</p>
+<ul>
+<li>使用 <a href="https://github.com/hihkm/DanmakuFactory" rel=nofollow>DanmakuFactory</a> 将XML弹幕文件转化为ASS字幕文件，然后使用一般播放器外挂加载字幕</li>
+<li><a href="https://alist.nn.ci/zh/" rel=nofollow>AList</a> 检测到同文件夹下的XML文件会自动挂载弹幕，实现带弹幕的录播效果</li>
+<li>使用 <a href="https://www.dandanplay.com/" rel=nofollow>弹弹play</a> 可直接挂载XML弹幕文件观看</li>
+</ul>
+<h2>自定义插件</h2>
+<p>下载整合了ykdl、youtube-dl、streamlink，不支持或者支持的不够好的网站可自行拓展。
+下载和上传模块插件化，如果有上传或下载目前不支持平台的需求便于拓展。</p>
+<p>下载基类在<code>engine/plugins/base_adapter.py</code>中，拓展其他网站，需要继承下载模块的基类，加装饰器<code>@Plugin.download</code>。</p>
+<p>拓展上传平台，继承<code>engine/plugins/upload/__init__.py</code>文件中上传基类，加装饰器<code>@Plugin.upload</code>。</p>
+<p>实现了一套基于装饰器的事件驱动框架。增加其他功能监听对应事件即可，比如下载后转码：</p>
+<pre lang=python3><span class=c1># e.p.给函数注册事件</span>
+<span class=c1># 如果操作耗时请指定block=True, 否则会卡住事件循环</span>
+<span class=nd>@event_manager</span><span class=o>.</span><span class=n>register</span><span class=p>(</span><span class=s2>"download_finish"</span><span class=p>,</span> <span class=n>block</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
+<span class=k>def</span> <span class=nf>transcoding</span><span class=p>(</span><span class=n>data</span><span class=p>):</span>
+    <span class=k>pass</span>
+</pre>
+<h2>LINUX下配置开机自启</h2>
+<p>开机自启可参照以下模板创建systemd unit:</p>
+<ol>
+<li>创建service文件：</li>
+</ol>
+<pre lang=shell>$<span class=w> </span>nano<span class=w> </span>~/.config/systemd/user/biliupd.service
+</pre>
+<ol start=2>
+<li>service文件的内容</li>
+</ol>
+<pre><code>[Unit]
+Description=Biliup Startup
+Documentation="https://biliup.github.io/biliup"
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=[在此填入你的config所在目录]
+ExecStart=/usr/bin/biliup -v
+ExecReload=/usr/bin/biliup restart
+ExecStop=/usr/bin/biliup stop
+
+[Install]
+WantedBy=default.target
+</code></pre>
+<ol start=3>
+<li>启用service并启动：</li>
+</ol>
+<pre lang=shell>$<span class=w> </span>systemctl<span class=w> </span>--user<span class=w> </span><span class=nb>enable</span><span class=w> </span>biliupd
+$<span class=w> </span>systemctl<span class=w> </span>--user<span class=w> </span>start<span class=w> </span>biliupd
+</pre>
+<h2>Deprecated</h2>
+<ul>
+<li><del>selenium操作浏览器上传两种方式(详见bili_chromeup.py)</del></li>
+<li><del>Windows图形界面版在release中下载AutoTool.msi进行安装</del><a href="https://github.com/ForgQi/bilibiliupload/releases/tag/v0.1.0" rel=nofollow><del>AutoTool.msi</del></a></li>
+<li>相关配置示例在<a href="https://github.com/biliup/biliup/tree/master/public/config.yaml" rel=nofollow>config.yaml</a>、<a href="https://github.com/biliup/biliup/tree/master/public/config.toml" rel=nofollow>config.toml</a>文件中，如直播间地址，b站账号密码等等</li>
+<li>由于目前使用账号密码登录，大概率触发验证。请使用命令行工具登录，将登录返回的信息填入配置文件，且使用引号括起yaml中cookie的数字代表其为字符串</li>
+</ul>
+<blockquote>
+<p>关于B站为什么不能多p上传<br>
+目前bilibili网页端是根据用户权重来限制分p数量的，权重不够的用户切换到客户端的提交接口即可解除这一限制。
+用户等级大于3，且粉丝数&gt;1000，web端投稿不限制分p数量</p>
+</blockquote>
+<h2>Credits</h2>
+<ul>
+<li>Thanks <code>ykdl, youtube-dl, streamlink</code> provides downloader.</li>
+<li>Thanks <code>THMonster/danmaku</code>.</li>
+</ul>
+<blockquote>
+<p>GUI：<a href="https://github.com/ForgQi/Caution" rel=nofollow>B站投稿客户端 biliup-app</a></p>
+</blockquote>
+<h2>Stars</h2>
+<p><a href="https://star-history.com/#biliup/biliup&amp;Date" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/b17c4434fdf43c6d7836e01c4b3c4da29dbea4ba/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d62696c6975702f62696c69757026747970653d44617465" alt="Star History Chart"></a></p>
+
+          </div>
+        </div>
+
+        <div id="data" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="mobile-data-tab" tabindex="-1">
+          <h2 class="page-title">Project details</h2>
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  <ul class="vertical-tabs__list">
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/ForgQi/bilibiliupload" rel="nofollow">
+        
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  <div class="hidden github-repo-info" data-controller="github-repo-info">
+GitHub statistics:    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="stargazersUrl" rel="noopener">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <strong>Stars:</strong>
+          <span data-github-repo-info-target="stargazersCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="forksUrl" rel="noopener">
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+          <strong>Forks:</strong>
+          <span data-github-repo-info-target="forksCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="openIssuesUrl" rel="noopener">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <strong>Open issues:</strong>
+          <span data-github-repo-info-target="openIssuesCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="openPRsUrl" rel="noopener">
+          <i class="fa fa-code-pull-request" aria-hidden="true"></i>
+          <strong>Open PRs:</strong>
+          <span data-github-repo-info-target="openPRsCount"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <p>
+View statistics for this project via <a href="https://libraries.io/pypi/biliup" title="External link" target="_blank" rel="noopener">Libraries.io</a>, or by using <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/" target="_blank" rel="noopener">our public dataset on Google BigQuery</a>  </p>
+</div>
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+    <p><strong>Author:</strong> ForgQi</p>
+  <p class="tags">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+    <span class="sr-only">Tags</span>
+    <span class="package-keyword">
+      bilibili,    </span>
+    <span class="package-keyword">
+      douyu,    </span>
+    <span class="package-keyword">
+      huya    </span>
+  </p>
+  <p>
+    <strong>Requires:</strong> Python &gt;=3.7
+  </p>
+</div>
+
+<div class="sidebar-section">
+    <h3 class="sidebar-section__title">Maintainers</h3>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/ForgQi/" aria-label="ForgQi">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/ab4c96513f3b5fb3ef32ee4ea6b2e389fef8d82c/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f33396435346132663363636236313231653336396233333562646230333432313f73697a653d3530" height="50" width="50" alt="Avatar for ForgQi from gravatar.com" title="Avatar for ForgQi from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">
+            ForgQi
+          </span>
+        </a>
+      </span>
+</div>
+
+          <br>
+        </div>
+
+        <div id="history" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="history-tab mobile-history-tab" tabindex="-1">
+          <h2 class="page-title split-layout">
+            <span>Release history</span>
+            <span class="reset-text margin-top">
+              <a href="/help/#project-release-notifications">Release notifications</a> |
+              <a href="/rss/project/biliup/releases.xml">RSS feed <i class="fa fa-rss" aria-hidden="true"></i></a>
+            </span>
+          </h2>
+
+          <div class="release-timeline">
+            <div class="release release--latest release--current">
+              <div class="release__meta">
+                <span class="badge">This version</span>
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/blue-cube.572a5bfb.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.35/">
+                <p class="release__version">
+                  0.4.35
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-02-21T08:26:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 21, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.34/">
+                <p class="release__version">
+                  0.4.34
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-01-27T07:48:40+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 27, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.33/">
+                <p class="release__version">
+                  0.4.33
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-01-11T16:57:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 11, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.32/">
+                <p class="release__version">
+                  0.4.32
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-01-10T16:40:13+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 10, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.32a5/">
+                <p class="release__version">
+                  0.4.32a5
+                  <span class="badge badge--warning">
+pre-release                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-01-09T16:20:01+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 9, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.32a4/">
+                <p class="release__version">
+                  0.4.32a4
+                  <span class="badge badge--warning">
+pre-release                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-01-08T16:41:49+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 8, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.32a3/">
+                <p class="release__version">
+                  0.4.32a3
+                  <span class="badge badge--warning">
+pre-release                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-01-07T14:31:56+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 7, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.32a2/">
+                <p class="release__version">
+                  0.4.32a2
+                  <span class="badge badge--warning">
+pre-release                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-01-03T17:28:39+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 3, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.32a1/">
+                <p class="release__version">
+                  0.4.32a1
+                  <span class="badge badge--warning">
+pre-release                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-12-31T16:22:58+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 31, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.31/">
+                <p class="release__version">
+                  0.4.31
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-09-12T09:28:39+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 12, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.30/">
+                <p class="release__version">
+                  0.4.30
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-09-12T08:05:37+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 12, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.29/">
+                <p class="release__version">
+                  0.4.29
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-08-04T13:40:26+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 4, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.28/">
+                <p class="release__version">
+                  0.4.28
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-07-30T14:13:21+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 30, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.27/">
+                <p class="release__version">
+                  0.4.27
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-07-29T02:22:27+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 29, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.26/">
+                <p class="release__version">
+                  0.4.26
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-07-27T15:05:34+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 27, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.25/">
+                <p class="release__version">
+                  0.4.25
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-07-27T12:07:06+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 27, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.24/">
+                <p class="release__version">
+                  0.4.24
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-07-21T14:47:07+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 21, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.23/">
+                <p class="release__version">
+                  0.4.23
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-07-16T14:54:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 16, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.22/">
+                <p class="release__version">
+                  0.4.22
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-06-29T10:30:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 29, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.21/">
+                <p class="release__version">
+                  0.4.21
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-06-11T08:54:36+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 11, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.20/">
+                <p class="release__version">
+                  0.4.20
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-05-24T23:44:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 24, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.19/">
+                <p class="release__version">
+                  0.4.19
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-05-10T19:07:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 10, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.18/">
+                <p class="release__version">
+                  0.4.18
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-04-21T16:37:31+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 21, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.17/">
+                <p class="release__version">
+                  0.4.17
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-24T11:02:55+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 24, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.16/">
+                <p class="release__version">
+                  0.4.16
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-22T13:41:46+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 22, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.15/">
+                <p class="release__version">
+                  0.4.15
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-21T09:21:15+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 21, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.14/">
+                <p class="release__version">
+                  0.4.14
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-19T07:32:37+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 19, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.13/">
+                <p class="release__version">
+                  0.4.13
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-19T04:51:07+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 19, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.12/">
+                <p class="release__version">
+                  0.4.12
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-17T00:00:58+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 17, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.11/">
+                <p class="release__version">
+                  0.4.11
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-07T09:41:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 7, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.10/">
+                <p class="release__version">
+                  0.4.10
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-07T05:01:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 7, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.9/">
+                <p class="release__version">
+                  0.4.9
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-06T03:47:07+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 6, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.8/">
+                <p class="release__version">
+                  0.4.8
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-04T14:09:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 4, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.7/">
+                <p class="release__version">
+                  0.4.7
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-28T06:36:25+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 28, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.6/">
+                <p class="release__version">
+                  0.4.6
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-28T05:51:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 28, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.5/">
+                <p class="release__version">
+                  0.4.5
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-28T02:19:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 28, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.4/">
+                <p class="release__version">
+                  0.4.4
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-20T15:14:39+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 20, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.3/">
+                <p class="release__version">
+                  0.4.3
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-15T08:29:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 15, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.2/">
+                <p class="release__version">
+                  0.4.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-14T15:07:29+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 14, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.1/">
+                <p class="release__version">
+                  0.4.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-13T05:03:47+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 13, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.4.0/">
+                <p class="release__version">
+                  0.4.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-09T17:07:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 9, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.12/">
+                <p class="release__version">
+                  0.3.12
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-04T15:45:29+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.11/">
+                <p class="release__version">
+                  0.3.11
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-02-01T17:41:53+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 1, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.10/">
+                <p class="release__version">
+                  0.3.10
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-01-31T16:06:07+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 31, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.9/">
+                <p class="release__version">
+                  0.3.9
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-01-30T17:06:36+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 30, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.8/">
+                <p class="release__version">
+                  0.3.8
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-11-05T05:56:31+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 5, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.7/">
+                <p class="release__version">
+                  0.3.7
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-09-15T15:49:45+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 15, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.6/">
+                <p class="release__version">
+                  0.3.6
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-08-20T05:47:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 20, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.5/">
+                <p class="release__version">
+                  0.3.5
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-08-11T04:58:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 11, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.4/">
+                <p class="release__version">
+                  0.3.4
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-07-31T13:01:39+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 31, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.3/">
+                <p class="release__version">
+                  0.3.3
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-07-19T14:35:33+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 19, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.2/">
+                <p class="release__version">
+                  0.3.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-07-17T05:14:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 17, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.1/">
+                <p class="release__version">
+                  0.3.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-07-16T15:29:54+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 16, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.3.0/">
+                <p class="release__version">
+                  0.3.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-07-02T16:50:54+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 2, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.19/">
+                <p class="release__version">
+                  0.2.19
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-06-30T16:45:07+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 30, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.18/">
+                <p class="release__version">
+                  0.2.18
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-06-27T14:53:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 27, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.17/">
+                <p class="release__version">
+                  0.2.17
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-06-25T17:25:58+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 25, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.16/">
+                <p class="release__version">
+                  0.2.16
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-06-23T18:14:21+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 23, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.15/">
+                <p class="release__version">
+                  0.2.15
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-06-22T15:34:59+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 22, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.14/">
+                <p class="release__version">
+                  0.2.14
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-04-29T16:30:08+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 29, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.13/">
+                <p class="release__version">
+                  0.2.13
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-04-28T17:25:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 28, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.12/">
+                <p class="release__version">
+                  0.2.12
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-04-28T17:06:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 28, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.11/">
+                <p class="release__version">
+                  0.2.11
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-04-05T10:00:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 5, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.10/">
+                <p class="release__version">
+                  0.2.10
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-30T00:55:32+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 30, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.9/">
+                <p class="release__version">
+                  0.2.9
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-25T15:56:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 25, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.8/">
+                <p class="release__version">
+                  0.2.8
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-25T15:45:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 25, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.7/">
+                <p class="release__version">
+                  0.2.7
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-25T14:09:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 25, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.6/">
+                <p class="release__version">
+                  0.2.6
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-25T13:45:38+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 25, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.5/">
+                <p class="release__version">
+                  0.2.5
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-24T15:51:52+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 24, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.4/">
+                <p class="release__version">
+                  0.2.4
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-24T01:16:15+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 24, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.3/">
+                <p class="release__version">
+                  0.2.3
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-20T12:46:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 20, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.2/">
+                <p class="release__version">
+                  0.2.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-14T17:55:34+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 14, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.1/">
+                <p class="release__version">
+                  0.2.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-02-28T12:46:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 28, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.2.0/">
+                <p class="release__version">
+                  0.2.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-02-25T14:23:09+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 25, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.10/">
+                <p class="release__version">
+                  0.1.10
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-02-02T15:55:03+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 2, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.9/">
+                <p class="release__version">
+                  0.1.9
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-11-13T12:46:46+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 13, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.8/">
+                <p class="release__version">
+                  0.1.8
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-10-16T06:23:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 16, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.7/">
+                <p class="release__version">
+                  0.1.7
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-09-26T15:22:26+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 26, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.6/">
+                <p class="release__version">
+                  0.1.6
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-31T15:40:14+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 31, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.4/">
+                <p class="release__version">
+                  0.1.4
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-27T00:57:16+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 27, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.3/">
+                <p class="release__version">
+                  0.1.3
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-21T06:19:53+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 21, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.2/">
+                <p class="release__version">
+                  0.1.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-04T14:42:10+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 4, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.1/">
+                <p class="release__version">
+                  0.1.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-23T13:22:53+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 23, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.1.0/">
+                <p class="release__version">
+                  0.1.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-20T15:39:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 20, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.9/">
+                <p class="release__version">
+                  0.0.9
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-18T03:25:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 18, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.8/">
+                <p class="release__version">
+                  0.0.8
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-06T14:51:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 6, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.7/">
+                <p class="release__version">
+                  0.0.7
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-06-29T14:49:54+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 29, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.6/">
+                <p class="release__version">
+                  0.0.6
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-06-26T16:03:07+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 26, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.5/">
+                <p class="release__version">
+                  0.0.5
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-06-22T15:10:30+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 22, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.4/">
+                <p class="release__version">
+                  0.0.4
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-06-19T12:58:08+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 19, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.3/">
+                <p class="release__version">
+                  0.0.3
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-06-18T14:08:01+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 18, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.2/">
+                <p class="release__version">
+                  0.0.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-05-21T12:51:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 21, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release release--oldest">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/biliup/0.0.1/">
+                <p class="release__version">
+                  0.0.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-05-19T15:17:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 19, 2021
+</time>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+          <div id="files" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="files-tab mobile-files-tab" tabindex="-1">
+            <h2 class="page-title">Download files</h2>
+            <p>Download the file for your platform. If you're not sure which to choose, learn more about <a href="https://packaging.python.org/tutorials/installing-packages/" title="External link" target="_blank" rel="noopener">installing packages</a>.</p>
+            <h3>
+Source Distribution            </h3>
+
+                  <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/fb/16/dc737d339663cdad82a55476f29b71bef100c1c33f226e1e7032084a2e59/biliup-0.4.35.tar.gz">
+          biliup-0.4.35.tar.gz
+        </a>
+        (897.9 kB
+        <a href="#copy-hash-modal-0892e9d0-cf6c-475a-ae4e-d1c0296c264c">view hashes</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2024-02-21T08:26:51+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 21, 2024
+</time>
+          <code>source</code>
+        </p>
+      </div>
+    </div>
+
+
+            <h3>
+Built Distribution            </h3>
+
+                <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/82/8f/ce5c4a20f1c02915df4fd1301c1be6ff4cd42de4ac3491113d58462ddefe/biliup-0.4.35-py3-none-any.whl">
+          biliup-0.4.35-py3-none-any.whl
+        </a>
+        (979.7 kB
+        <a href="#copy-hash-modal-532124a6-1e89-4597-9982-55f31a9d2761">view hashes</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2024-02-21T08:26:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 21, 2024
+</time>
+          <code>py3</code>
+        </p>
+      </div>
+    </div>
+
+          </div>
+
+<div id="copy-hash-modal-0892e9d0-cf6c-475a-ae4e-d1c0296c264c" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for biliup-0.4.35.tar.gz      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for biliup-0.4.35.tar.gz</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-controller="clipboard">
+            <th scope="row">SHA256</th>
+            <td><code data-clipboard-target="source">1ad0571cd42658c336a826b81614170d6295eb4b08815d6a599135c747ee0f19</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+          <tr data-controller="clipboard">
+            <th scope="row">MD5</th>
+            <td><code data-clipboard-target="source">08f53063f4da753ff231b738107fbe6e</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+          <tr data-controller="clipboard">
+            <th scope="row">BLAKE2b-256</th>
+            <td><code data-clipboard-target="source">fb16dc737d339663cdad82a55476f29b71bef100c1c33f226e1e7032084a2e59</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div><div id="copy-hash-modal-532124a6-1e89-4597-9982-55f31a9d2761" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for biliup-0.4.35-py3-none-any.whl      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for biliup-0.4.35-py3-none-any.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-controller="clipboard">
+            <th scope="row">SHA256</th>
+            <td><code data-clipboard-target="source">0560fb929434b95565de988f1c535db97f89b6dbcfa8ac3af67a7979eb571321</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+          <tr data-controller="clipboard">
+            <th scope="row">MD5</th>
+            <td><code data-clipboard-target="source">68e55332d2351137fdf45db56cff1f20</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+          <tr data-controller="clipboard">
+            <th scope="row">BLAKE2b-256</th>
+            <td><code data-clipboard-target="source">828fce5c4a20f1c02915df4fd1301c1be6ff4cd42de4ac3491113d58462ddefe</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/static/images/white-cube.2351a86c.svg" alt="" class="-js-white-cube">
+      </div>
+
+      <div class="footer__menus">
+        <div class="footer__menu">
+          <h2>Help</h2>
+          <nav aria-label="Help navigation">
+            <ul>
+              <li><a href="https://packaging.python.org/tutorials/installing-packages/" title="External link" target="_blank" rel="noopener">Installing packages</a></li>
+              <li><a href="https://packaging.python.org/tutorials/packaging-projects/" title="External link" target="_blank" rel="noopener">Uploading packages</a></li>
+              <li><a href="https://packaging.python.org/" title="External link" target="_blank" rel="noopener">User guide</a></li>
+              <li><a href="https://www.python.org/dev/peps/pep-0541/" title="External link" target="_blank" rel="noopener">Project name retention</a></li>
+              <li><a href="/help/">FAQs</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>About PyPI</h2>
+          <nav aria-label="About PyPI navigation">
+            <ul>
+              <li><a href="https://twitter.com/PyPI" title="External link" target="_blank" rel="noopener">PyPI on Twitter</a></li>
+              <li><a href="https://dtdg.co/pypi" title="External link" target="_blank" rel="noopener">Infrastructure dashboard</a></li>
+              <li><a href="/stats/">Statistics</a></li>
+              <li><a href="/trademarks/">Logos & trademarks</a></li>
+              <li><a href="/sponsors/">Our sponsors</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Contributing to PyPI</h2>
+          <nav aria-label="How to contribute navigation">
+            <ul>
+              <li><a href="/help/#feedback">Bugs and feedback</a></li>
+              <li><a href="https://github.com/pypi/warehouse" title="External link" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+              <li><a href="https://hosted.weblate.org/projects/pypa/warehouse/" title="External link" target="_blank" rel="noopener">Translate PyPI</a></li>
+              <li><a href="/sponsors/">Sponsor PyPI</a></li>
+              <li><a href="https://github.com/pypi/warehouse/graphs/contributors" title="External link" target="_blank" rel="noopener">Development credits</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Using PyPI</h2>
+          <nav aria-label="Using PyPI navigation">
+            <ul>
+              <li><a href="https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md" title="External link" target="_blank" rel="noopener">Code of conduct</a></li>
+              <li><a href="/security/">Report security issue</a></li>
+              <li><a href="https://www.python.org/privacy/" title="External link" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><a href="/policy/terms-of-use/">Terms of use</a></li>
+              <li><a href="/policy/acceptable-use-policy/">Acceptable Use Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <hr class="footer__divider">
+
+      <div class="footer__text">
+        <p>Status:<a href="https://status.python.org/" title="External link" target="_blank" rel="noopener">
+          <span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">all systems operational</span></a>
+        </p>
+        <p>
+Developed and maintained by the Python community, for the Python community.          <br>
+          <a href="https://donate.pypi.org">Donate today!</a>
+        </p>
+        <p>
+          "PyPI", "Python Package Index", and the blocks logos are registered <a href="/trademarks/">trademarks</a> of the <a href="https://python.org/psf-landing" target="_blank" rel="noopener">Python Software Foundation</a>.<br>
+        </p>
+        <p>
+          © 2024 <a href="https://www.python.org/psf-landing/" title="External link" target="_blank" rel="noopener">Python Software Foundation</a><br>
+          <a href="/sitemap/">Site map</a>
+        </p>
+      </div>
+
+      <div class="centered hide-on-desktop">
+        <button type="button" class="button button--switch-to-desktop hidden" data-viewport-toggle-target="switchToDesktop" data-action="viewport-toggle#switchToDesktop">
+Switch to desktop version        </button>
+      </div>
+    </footer>
+
+
+    <div class="language-switcher">
+      <form action="/locale/">
+        <ul>
+          <li>
+            <button
+              class="language-switcher__selected"
+              name="locale_id" value="en" type="submit"
+            >
+              English
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="es" type="submit"
+            >
+              español
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="fr" type="submit"
+            >
+              français
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="ja" type="submit"
+            >
+              日本語
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="pt_BR" type="submit"
+            >
+              português (Brasil)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="uk" type="submit"
+            >
+              українська
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="el" type="submit"
+            >
+              Ελληνικά
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="de" type="submit"
+            >
+              Deutsch
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="zh_Hans" type="submit"
+            >
+              中文 (简体)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="zh_Hant" type="submit"
+            >
+              中文 (繁體)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="ru" type="submit"
+            >
+              русский
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="he" type="submit"
+            >
+              עברית
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="eo" type="submit"
+            >
+              esperanto
+            </button>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+
+<div class="sponsors">
+  <p class="sponsors__title">Supported by</p>
+  <div class="sponsors__divider"></div>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aws.amazon.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/ed7074cadad1a06f56bc520ad9bd3e00d0704c5b/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6177732d77686974652d6c6f676f2d7443615473387a432e706e67" alt=AWS loading=lazy>
+          <span class="sponsors__name">AWS</span>
+          <span class="sponsors__service">
+            Cloud computing and Security Sponsor
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.datadoghq.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/8855f7c063a3bdb5b0ce8d91bfc50cf851cc5c51/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f64617461646f672d77686974652d6c6f676f2d6668644c4e666c6f2e706e67" alt=Datadog loading=lazy>
+          <span class="sponsors__name">Datadog</span>
+          <span class="sponsors__service">
+            Monitoring
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.fastly.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/df6fe8829cbff2d7f668d98571df1fd011f36192/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f666173746c792d77686974652d6c6f676f2d65684d3077735f6f2e706e67" alt=Fastly loading=lazy>
+          <span class="sponsors__name">Fastly</span>
+          <span class="sponsors__service">
+            CDN
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://careers.google.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/420cc8cf360bac879e24c923b2f50ba7d1314fb0/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f676f6f676c652d77686974652d6c6f676f2d616734424e3774332e706e67" alt=Google loading=lazy>
+          <span class="sponsors__name">Google</span>
+          <span class="sponsors__service">
+            Download Analytics
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.python.org/psf/sponsors/#microsoft">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/524d1ce72f7772294ca4c1fe05d21dec8fa3f8ea/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6d6963726f736f66742d77686974652d6c6f676f2d5a443172685444462e706e67" alt=Microsoft loading=lazy>
+          <span class="sponsors__name">Microsoft</span>
+          <span class="sponsors__service">
+            PSF Sponsor
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.pingdom.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/d01053c02f3a626b73ffcb06b96367fdbbf9e230/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f70696e67646f6d2d77686974652d6c6f676f2d67355831547546362e706e67" alt=Pingdom loading=lazy>
+          <span class="sponsors__name">Pingdom</span>
+          <span class="sponsors__service">
+            Monitoring
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://getsentry.com/for/python">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/67af7117035e2345bacb5a82e9aa8b5b3e70701d/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f73656e7472792d77686974652d6c6f676f2d4a2d6b64742d706e2e706e67" alt=Sentry loading=lazy>
+          <span class="sponsors__name">Sentry</span>
+          <span class="sponsors__service">
+            Error logging
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://statuspage.io">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/b611884ff90435a0575dbab7d9b0d3e60f136466/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f737461747573706167652d77686974652d6c6f676f2d5467476c6a4a2d502e706e67" alt=StatusPage loading=lazy>
+          <span class="sponsors__name">StatusPage</span>
+          <span class="sponsors__service">
+            Status page
+          </span>
+        </a>
+</div>
+  </body>
+
+</html>
